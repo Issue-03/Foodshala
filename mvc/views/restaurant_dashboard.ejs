@@ -1,0 +1,112 @@
+<%- include('partials/header.ejs') %>
+
+<div class="d-flex" id="wrapper">
+  <!-- Sidebar -->
+  <div class="bg-light border-right" id="sidebar-wrapper">
+    <div class="sidebar-heading">
+      <img src="images/rest.jpeg" alt="A restaurant image" style="width: 200px;height: 200px;">
+      <h4>Hello, <%= name %></h4>
+    </div>
+    <div class="list-group list-group-flush">
+      <a href="/restaurant_dashboard" class="list-group-item list-group-item-action bg-light">Dashboard</a>
+      <a href="#" class="list-group-item list-group-item-action bg-light">Active Orders</a>
+      <a href="#" class="list-group-item list-group-item-action bg-light">Completed Orders</a>
+      <a href="#" class="list-group-item list-group-item-action bg-light">Customer Support</a>
+      <a href="#" class="list-group-item list-group-item-action bg-light">Edit Profile</a>
+    </div>
+  </div>
+  
+  <!-- Page Content -->
+  <div id="page-content-wrapper">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+      <button class="btn btn-sm" id="menu-toggle"><i class="material-icons">menu</i> </button>
+
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/logout">Logout</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Menu Page -->
+    <div class="container-fluid menu-page">
+      <div class="d-flex justify-content-around flex-wrap">
+        <div class="card m-2" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">The Indian Rasoi</h5>
+            <p class="card-text">This is some tasty dish in this restaurant place your order now and get 50% off.
+            </p>
+            <a href="#" class="btn btn-primary">Order</a>
+          </div>
+        </div>
+        <div class="card m-2" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">The Indian Rasoi</h5>
+            <p class="card-text">This is some tasty dish in this restaurant place your order now and get 50% off.
+            </p>
+            <a href="#" class="btn btn-primary">Order</a>
+          </div>
+        </div>
+        <div class="card m-2" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">The Indian Rasoi</h5>
+            <p class="card-text">This is some tasty dish in this restaurant place your order now and get 50% off.
+            </p>
+            <a href="#" class="btn btn-primary">Order</a>
+          </div>
+        </div>
+        <div class="card m-2" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">The Indian Rasoi</h5>
+            <p class="card-text">This is some tasty dish in this restaurant place your order now and get 50% off.
+            </p>
+            <a href="#" class="btn btn-primary">Order</a>
+          </div>
+        </div>
+        <div class="card m-2" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">The Indian Rasoi</h5>
+            <p class="card-text">This is some tasty dish in this restaurant place your order now and get 50% off.
+            </p>
+            <a href="#" class="btn btn-primary">Order</a>
+          </div>
+        </div>
+        <div class="card m-2" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">The Indian Rasoi</h5>
+            <p class="card-text">This is some tasty dish in this restaurant place your order now and get 50% off.
+            </p>
+            <a href="#" class="btn btn-primary">Order</a>
+          </div>
+        </div>
+        <div class="card m-2" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">The Indian Rasoi</h5>
+            <p class="card-text">This is some tasty dish in this restaurant place your order now and get 50% off.
+            </p>
+            <a href="#" class="btn btn-primary">Order</a>
+          </div>
+        </div>
+        <div class="card m-2" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">The Indian Rasoi</h5>
+            <p class="card-text">This is some tasty dish in this restaurant place your order now and get 50% off.
+            </p>
+            <a href="#" class="btn btn-primary">Order</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /#page-content-wrapper -->
+</div>
+
+<script>
+  document.getElementById("menu-toggle").addEventListener('click', function (e) {
+    e.preventDefault();
+    document.getElementById("wrapper").classList.toggle("toggled");
+  });
+</script>
+
+<%- include('partials/footer.ejs') %>
