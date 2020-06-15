@@ -2,12 +2,12 @@ const mongoose = require('mongoose');
 let dbURI = 'mongodb://localhost/Foodshala';
 
 
-// if (process.env.NODE_ENV === 'production') {
-//   dbURI = process.env.MONGODB_URI;
-// }
+if (process.env.NODE_ENV === 'production') {
+  dbURI = process.env.MONGODB_URI;
+}
 
 
-mongoose.connect(dbURI, { useNewUrlParser: true });
+mongoose.connect(dbURI, { useNewUrlParser: true});
 
 
 // heroku logs --tail
